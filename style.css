@@ -1,0 +1,87 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 5% 20% 10% 20%;
+    padding: 0;
+  }
+  
+  *{
+    box-sizing: border-box;
+  }
+  
+  #login-container{
+    background-color: #E2E8F0;
+    width: 100%;
+    padding: 70px 0;
+  }
+  
+  form{
+    padding: 80px 40px 80px 80px;
+  }
+  
+  #login-container h1{
+    color: #3182CE;
+    animation-name: spin;
+    animation-duration: 2s;
+    letter-spacing: 1.4px;
+    text-align: center;
+  
+  }
+  
+  @keyframes spin {
+    
+    100% {
+      -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Safari prior 9.0 */
+    transform: rotate(360deg); /* Standard syntax */
+     
+   }
+    }
+  
+  input[type="email"], input[type="password"] {
+     width: 80%;
+     padding: 15px;
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+    margin: 10px 0 0 20px;
+    outline: none;
+  }
+  
+  #submit{
+    width: 80%;
+    padding: 15px;
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+    color: white;
+    font-size: 20px;
+    background-color: #3182CE;
+    margin: 70px 20px;
+    font-weight: bold;
+   
+  }
+  
+  #submit:hover{
+    cursor: pointer;
+  }
+  
+  .email-label, .password-label {
+    font-size: 20px;
+    color: 	#A9A9A9;
+    font-size: 18px;
+    padding: 5px;
+    margin-left: 20px; 
+  }
+  
+  @media screen and (max-width: 790px) {
+    #log-in{
+      width: 95%;
+    }
+    
+    form{
+       padding: 80px 0 80px 20px;
+  
+    }
+   }
+  
+  
+  
+  
