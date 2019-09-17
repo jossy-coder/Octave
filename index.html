@@ -1,62 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
     <title>Log-in Form</title>
-    
     <link rel="stylesheet" type="text/css" href="style.css">
-   
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  
   </head>
-  
-  
   <body>
-   
     <div id="login-container">
-    
-      <h1><code>{  }</code> ctave</h1>
-    
-     
-   
+      <img src="https://res.cloudinary.com/dlq9o1289/image/upload/v1568670047/ctave_xpwxoq.png">
        <form>                           
-         
            <label class="email-label" for="email">Email</label>
-             
-           <br>
-         
-           <input type="email" name="email" id="email" required>                                  
-                              
-      
             <br>
-         <br>
- 
-         
+           <input type="email" name="email" id="email" required>                                  
+            <br>
+            <br>         
            <label class="password-label" for="psw">Password</label>
-       
-      <br>
-      
-      <input type="password" name="psw" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-        
-         
-           
-         <br>
-         <br>
-         
-        
+            <br>
+      <input type="password" name="psw" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+      title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>  
+          <br>
+          <br>
         <button type="submit" id="submit" value="submit">Log in</button> 
-        
-      
     </form>
-    
-    
     </div>
-    
   </body>
 </html>
