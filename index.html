@@ -21,16 +21,54 @@
 			<div class="right-box">
 				<h2>Create account</h2>
 				<p>Already have an account?<a href="./login.html"> Log in</a></p>
-				<input type="text" name="name" placeholder="Name" required />
-				<input type="text" name="email" placeholder="Email" required />
-				<input
-					type="password"
-					name="password"
-					placeholder="Password"
-					required
-				/>
-				<input type="submit" name="Signup-button" value="Sign up" />
+				<form action="" id="sign-up">
+					<input type="text" name="name" placeholder="Name" id="name" required />
+					<input type="text" name="email" placeholder="Email" id="email" required />
+					<input
+						type="password"
+						name="password" id="password"
+						pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+						title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+						placeholder="Password"
+
+						required
+					/>
+					<input type="submit" name="Signup-button" value="Sign up" />
+				</form>
+				
 			</div>
 		</div>
+		<!-- Do not write any html code below this line & all scripts must go after firebase sdk -->
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDpjhmT5g6V8qLowZI7vKxZuEATt3S12TQ",
+    authDomain: "octave-fa028.firebaseapp.com",
+    databaseURL: "https://octave-fa028.firebaseio.com",
+    projectId: "octave-fa028",
+    storageBucket: "octave-fa028.appspot.com",
+    messagingSenderId: "901312390738",
+    appId: "1:901312390738:web:a3beedb4274d2b6089618b"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  // make auth and firestore reference
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+  //update firestore setting
+</script>
+
+<script src="scripts/main.js"></script>
+        </body>
+    </html>
 	</body>
 </html>
