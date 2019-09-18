@@ -33,13 +33,13 @@
 					<li class="activity"><a href="#">Activity</a></li>
 					<li class="profile"><a href="#">Profile</a></li>
 					<li><a href="#">Settings</a></li>
-					<li><a href="#">Log out</a></li>
+					<li id="logout"><a href="#">Log out</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main>
 			<div>
-				<p>Welcome, Joshua Folorunsho</p>
+				<p id="welcome"></p>
 			</div>
 			<section>
 				<p>You currently have no activity</p>
@@ -57,5 +57,32 @@
 			</nav>
 		</footer>
 		<script src="" async defer></script>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDpjhmT5g6V8qLowZI7vKxZuEATt3S12TQ",
+    authDomain: "octave-fa028.firebaseapp.com",
+    databaseURL: "https://octave-fa028.firebaseio.com",
+    projectId: "octave-fa028",
+    storageBucket: "octave-fa028.appspot.com",
+    messagingSenderId: "901312390738",
+    appId: "1:901312390738:web:a3beedb4274d2b6089618b"
+  };
+  
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  // make auth and firestore reference
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+</script>
+<script src="scripts/welcome.js"></script>
 	</body>
 </html>
