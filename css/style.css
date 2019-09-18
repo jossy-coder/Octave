@@ -1,83 +1,72 @@
-body
-{
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    font-family: Proxima-Nova;
-    font-weight: 300;
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: Proxima-Nova;
+	font-weight: 300;
 }
-#signup-box
-{
-    position: relative;
-    margin: 5% auto;
-    width: 800px;
-    height: 500px;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); 
+#signup-box {
+	position: relative;
+	margin: 5% auto;
+	width: 800px;
+	height: 500px;
+	background: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
-.left-box
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    padding: 40px;
-    width: 400px;
-    height: 500px;
-    background-image: url(image.png);
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
+.left-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	padding: 40px;
+	width: 400px;
+	height: 500px;
+	background-image: url(../img/Image.png);
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	text-align: center;
 }
-h1 
-{
-    
-    font-weight: 300;
-    font-size: 30px;
-    top: 50%;
+h1 {
+	font-weight: 300;
+	font-size: 30px;
+	top: 50%;
 }
-.logo
-{
-    margin-top: 40%;
+.logo {
+	margin-top: 40%;
 }
-.right-box
-{
-    position: absolute;
-    top: 0;
-    right: 0;
-    box-sizing: border-box;
-    padding: 40px;
-    width: 400px;
-    height: 500px;
-    background-color: #E2E8F0;
+.right-box {
+	position: absolute;
+	top: 0;
+	right: 0;
+	box-sizing: border-box;
+	padding: 40px;
+	width: 400px;
+	height: 500px;
+	background-color: #e2e8f0;
 }
 
-h2
-{
-    font-weight: 200;
-    text-align: center;
+h2 {
+	font-weight: 200;
+	text-align: center;
 }
 
-input[type="text"],
-input[type="password"]
-{
-    display: block;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    padding: 4px;
-    width: 300px;
-    height: 30px;
-    border-radius: 5px;
-    border: 1px solid #E2E8F0;
-   
+input[type='text'],
+input[type='password'] {
+	display: block;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	padding: 4px;
+	width: 300px;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid #e2e8f0;
 }
 
-input[type="submit"]
-{
-    margin-bottom: 30px;
-    width: 300px;
-    height: 30px;
-    background-color: #3182CE;
-    border-radius: 5px;
+input[type='submit'] {
+	margin-bottom: 30px;
+	width: 300px;
+	height: 30px;
+	background-color: #3182ce;
+	border-radius: 5px;
 }
