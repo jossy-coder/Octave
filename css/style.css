@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-size: 16px;
+	font-size: 18px;
 	font-family: Proxima-Nova;
 	font-weight: 300;
 }
@@ -45,10 +45,17 @@ h1 {
 	height: 500px;
 	background-color: #e2e8f0;
 }
-
+.right-box p {
+	text-align: center;
+}
 h2 {
 	font-weight: 200;
 	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #3182ce;
 }
 
 input[type='text'],
@@ -58,7 +65,7 @@ input[type='password'] {
 	margin-bottom: 20px;
 	padding: 4px;
 	width: 300px;
-	height: 30px;
+	height: 40px;
 	border-radius: 5px;
 	border: 1px solid #e2e8f0;
 }
@@ -66,7 +73,9 @@ input[type='password'] {
 input[type='submit'] {
 	margin-bottom: 30px;
 	width: 300px;
-	height: 30px;
+	height: 40px;
 	background-color: #3182ce;
+	border: none;
 	border-radius: 5px;
+	color: white;
 }
