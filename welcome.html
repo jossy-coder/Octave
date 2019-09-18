@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Welcome page</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./css/welcome.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="#">upgrade your browser</a> to improve your experience.
+			</p>
+		<![endif]-->
+
+		<header>
+			<div class="logo">{ }ctave</div>
+			<nav>
+				<ul>
+					<li class="activity"><a href="#">Activity</a></li>
+					<li class="profile"><a href="#">Profile</a></li>
+					<li><a href="#">Settings</a></li>
+					<li id="logout"><a href="#">Log out</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div>
+				<p id="welcome"></p>
+			</div>
+			<section>
+				<p>You currently have no activity</p>
+				<div img="img-wrapper">
+					<img src="./img/clip-list-is-empty.png" alt="" />
+				</div>
+				<div class="cta">
+					<a href="#" class="button">Create</a>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<nav>
+				<p>Copyright &copy; 2019</p>
+			</nav>
+		</footer>
+		<script src="" async defer></script>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDpjhmT5g6V8qLowZI7vKxZuEATt3S12TQ",
+    authDomain: "octave-fa028.firebaseapp.com",
+    databaseURL: "https://octave-fa028.firebaseio.com",
+    projectId: "octave-fa028",
+    storageBucket: "octave-fa028.appspot.com",
+    messagingSenderId: "901312390738",
+    appId: "1:901312390738:web:a3beedb4274d2b6089618b"
+  };
+  
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  // make auth and firestore reference
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+</script>
+<script src="scripts/welcome.js"></script>
+	</body>
+</html>
