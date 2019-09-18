@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	font-size: 23px;
+}
+
+li,
+a {
+	color: white;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+	margin-left: 50px;
+}
+
+li a {
+	transition: all 0.3s ease 0s;
+}
+
+.logo {
+	cursor: pointer;
+	color: white;
+	margin-right: auto;
+	font-size: 30px;
+}
+header {
+	width: 100%;
+	background-color: #3182ce;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 30px 100px;
+}
+
+main {
+	width: 80%;
+	height: 75vh;
+	margin: 40px auto;
+	color: #5a5a5a;
+}
+
+section {
+	background-color: #e2e8f0;
+	margin: 20px auto;
+	height: 65vh;
+}
+section p {
+	padding-top: 30px;
+	text-align: center;
+}
+
+div > img {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	width: 450px;
+	height: 400px;
+}
+.cta {
+	text-align: center;
+}
+.button {
+	background-color: #3182ce;
+	padding: 20px 50px;
+	border-radius: 10px;
+}
+footer {
+	height: 60px;
+	background-color: #3182ce;
+	color: white;
+}
+footer p {
+	text-align: center;
+	font-size: 0.9em;
+	line-height: 60px;
+}
+
+@media screen and (max-width: 850px) {
+	* {
+		font-size: 18px;
+	}
+	.logo {
+		font-size: 25px;
+		margin-left: 2px;
+	}
+	header {
+		padding: 25px 50px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	* {
+		font-size: 16px;
+	}
+	.activity,
+	.profile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	* {
+		font-size: 16px;
+	}
+	main {
+		height: 75vh;
+	}
+	div > img {
+		width: 300px;
+		height: 280px;
+	}
+
+	.logo {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	* {
+		font-size: 16px;
+	}
+	.logo {
+		font-size: 20px;
+	}
+	header {
+		padding: 25px 15px;
+	}
+	div > img {
+		width: 250px;
+		height: 250px;
+	}
+}
